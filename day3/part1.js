@@ -2,7 +2,7 @@ import { input } from './input.js';
 
 const priority = (item) => {
   const code = item.charCodeAt(0);
-  return code > 97 ? code - 96 : code - 38;
+  return code >= 97 ? code - 96 : code - 38;
 }
 
 const common = (rucksack) => {
